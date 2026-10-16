@@ -1,0 +1,24 @@
+license="Apache-2.0"
+issueTrackerURL="https://github.com/Extraherz/Durability-Indicator/issues"
+
+[[mods]]
+modId="durabilityindicator"
+version="${mod_version}"
+displayName="Durability Indicator"
+displayURL="https://github.com/Extraherz/Durability-Indicator"
+authors="Extraherz"
+description='''A highly customizable, client-side durability indicator for Minecraft.'''
+
+[[dependencies.durabilityindicator]]
+modId="neoforge"
+type="required"
+versionRange="[${neoforge_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.durabilityindicator]]
+modId="minecraft"
+type="required"
+versionRange="[26.3]"
+ordering="NONE"
+side="BOTH"

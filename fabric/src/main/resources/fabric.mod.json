@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "durabilityindicator",
+  "version": "${version}",
+  "name": "Durability Indicator",
+  "description": "A customizable durability overlay for Minecraft.",
+  "authors": [
+    "Extraherz"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Extraherz/Durability-Indicator",
+    "sources": "https://github.com/Extraherz/Durability-Indicator",
+    "issues": "https://github.com/Extraherz/Durability-Indicator/issues"
+  },
+  "license": "Apache-2.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.extraherz.durabilityindicator.fabric.DurabilityIndicatorFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

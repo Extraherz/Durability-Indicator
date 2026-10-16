@@ -1,0 +1,53 @@
+{
+  "durabilityindicator.midnightconfig.title": "Durability Indicator Settings",
+
+  "durabilityindicator.midnightconfig.category.general": "General",
+  "durabilityindicator.midnightconfig.category.display": "Display",
+  "durabilityindicator.midnightconfig.category.position": "Position",
+
+  "durabilityindicator.midnightconfig.enabled": "Enable Durability Indicator",
+  "durabilityindicator.midnightconfig.enabled.tooltip": "Show durability numbers on damageable items.",
+
+  "durabilityindicator.midnightconfig.showUndamagedInCreative": "Show Undamaged Items in Creative",
+  "durabilityindicator.midnightconfig.showUndamagedInCreative.tooltip": "Show durability numbers on undamaged items while in Creative Mode.",
+
+  "durabilityindicator.midnightconfig.textScale": "Text Scale",
+  "durabilityindicator.midnightconfig.textScale.tooltip": "Adjust the size of durability numbers.",
+
+  "durabilityindicator.midnightconfig.compactNumbers": "Compact Numbers",
+  "durabilityindicator.midnightconfig.compactNumbers.tooltip": "Display 1561 as 1,6k instead of the exact value.",
+
+  "durabilityindicator.midnightconfig.textShadow": "Text Shadow",
+  "durabilityindicator.midnightconfig.textShadow.tooltip": "Render a shadow behind durability numbers.",
+
+  "durabilityindicator.midnightconfig.showVanillaDurabilityBar": "Show Vanilla Durability Bar",
+  "durabilityindicator.midnightconfig.showVanillaDurabilityBar.tooltip": "Show the original Minecraft durability bar below the durability number.",
+
+  "durabilityindicator.midnightconfig.xOffset": "Horizontal Offset",
+  "durabilityindicator.midnightconfig.xOffset.tooltip": "Move the durability number left or right.",
+
+  "durabilityindicator.midnightconfig.yOffsetWithBar": "Vertical Offset (With Bar)",
+  "durabilityindicator.midnightconfig.yOffsetWithBar.tooltip": "Adjust the vertical position when the vanilla durability bar is visible.",
+
+  "durabilityindicator.midnightconfig.yOffsetWithoutBar": "Vertical Offset (Without Bar)",
+  "durabilityindicator.midnightconfig.yOffsetWithoutBar.tooltip": "Adjust the vertical position when the vanilla durability bar is hidden.",
+
+  "durabilityindicator.midnightconfig.category.colors": "Colors",
+  "durabilityindicator.midnightconfig.category.thresholds": "Thresholds",
+
+  "durabilityindicator.midnightconfig.greenColor": "Green",
+  "durabilityindicator.midnightconfig.orangeColor": "Orange",
+  "durabilityindicator.midnightconfig.yellowColor": "Yellow",
+  "durabilityindicator.midnightconfig.redColor": "Red",
+  "durabilityindicator.midnightconfig.darkRedColor": "Dark Red",
+
+  "durabilityindicator.midnightconfig.greenThreshold": "Green Threshold",
+  "durabilityindicator.midnightconfig.orangeThreshold": "Orange Threshold",
+  "durabilityindicator.midnightconfig.yellowThreshold": "Yellow Threshold",
+  "durabilityindicator.midnightconfig.redThreshold": "Red Threshold",
+
+  "durabilityindicator.midnightconfig.greenThreshold.tooltip": "Minimum durability percentage for green. Keep thresholds in descending order.",
+  "durabilityindicator.midnightconfig.orangeThreshold.tooltip": "Minimum durability percentage for orange. Keep thresholds in descending order.",
+  "durabilityindicator.midnightconfig.yellowThreshold.tooltip": "Minimum durability percentage for yellow. Keep thresholds in descending order.",
+  "durabilityindicator.midnightconfig.redThreshold.tooltip": "Minimum durability percentage for red. Lower values use dark red."
+}

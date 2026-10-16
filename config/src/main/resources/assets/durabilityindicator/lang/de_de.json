@@ -1,0 +1,53 @@
+{
+  "durabilityindicator.midnightconfig.title": "Durability Indicator Einstellungen",
+
+  "durabilityindicator.midnightconfig.category.general": "Allgemein",
+  "durabilityindicator.midnightconfig.category.display": "Darstellung",
+  "durabilityindicator.midnightconfig.category.position": "Position",
+
+  "durabilityindicator.midnightconfig.enabled": "Haltbarkeitsanzeige aktivieren",
+  "durabilityindicator.midnightconfig.enabled.tooltip": "Zeigt Haltbarkeitszahlen auf beschädigbaren Gegenständen an.",
+
+  "durabilityindicator.midnightconfig.showUndamagedInCreative": "Unbeschädigte Items im Kreativmodus",
+  "durabilityindicator.midnightconfig.showUndamagedInCreative.tooltip": "Zeigt Haltbarkeitszahlen auch auf unbeschädigten Gegenständen im Kreativmodus an.",
+
+  "durabilityindicator.midnightconfig.textScale": "Textskalierung",
+  "durabilityindicator.midnightconfig.textScale.tooltip": "Passt die Größe der Haltbarkeitszahlen an.",
+
+  "durabilityindicator.midnightconfig.compactNumbers": "Kompakte Zahlen",
+  "durabilityindicator.midnightconfig.compactNumbers.tooltip": "Zeigt beispielsweise 1,6k statt 1561 an.",
+
+  "durabilityindicator.midnightconfig.textShadow": "Textschatten",
+  "durabilityindicator.midnightconfig.textShadow.tooltip": "Zeigt einen Schatten hinter den Haltbarkeitszahlen an.",
+
+  "durabilityindicator.midnightconfig.showVanillaDurabilityBar": "Vanilla-Haltbarkeitsbalken anzeigen",
+  "durabilityindicator.midnightconfig.showVanillaDurabilityBar.tooltip": "Zeigt den ursprünglichen Minecraft-Haltbarkeitsbalken unter der Haltbarkeitszahl an.",
+
+  "durabilityindicator.midnightconfig.xOffset": "Horizontale Verschiebung",
+  "durabilityindicator.midnightconfig.xOffset.tooltip": "Verschiebt die Haltbarkeitszahl nach links oder rechts.",
+
+  "durabilityindicator.midnightconfig.yOffsetWithBar": "Vertikale Verschiebung (mit Bar)",
+  "durabilityindicator.midnightconfig.yOffsetWithBar.tooltip": "Passt die Position bei sichtbarem Vanilla-Haltbarkeitsbalken an.",
+
+  "durabilityindicator.midnightconfig.yOffsetWithoutBar": "Vertikale Verschiebung (ohne Bar)",
+  "durabilityindicator.midnightconfig.yOffsetWithoutBar.tooltip": "Passt die Position ohne sichtbaren Vanilla-Haltbarkeitsbalken an.",
+
+  "durabilityindicator.midnightconfig.category.colors": "Farben",
+  "durabilityindicator.midnightconfig.category.thresholds": "Schwellenwerte",
+
+  "durabilityindicator.midnightconfig.greenColor": "Grün",
+  "durabilityindicator.midnightconfig.orangeColor": "Orange",
+  "durabilityindicator.midnightconfig.yellowColor": "Gelb",
+  "durabilityindicator.midnightconfig.redColor": "Rot",
+  "durabilityindicator.midnightconfig.darkRedColor": "Dunkelrot",
+
+  "durabilityindicator.midnightconfig.greenThreshold": "Grenzwert für Grün",
+  "durabilityindicator.midnightconfig.orangeThreshold": "Grenzwert für Orange",
+  "durabilityindicator.midnightconfig.yellowThreshold": "Grenzwert für Gelb",
+  "durabilityindicator.midnightconfig.redThreshold": "Grenzwert für Rot",
+
+  "durabilityindicator.midnightconfig.greenThreshold.tooltip": "Mindesthaltbarkeit in Prozent für Grün. Grenzwerte absteigend anordnen.",
+  "durabilityindicator.midnightconfig.orangeThreshold.tooltip": "Mindesthaltbarkeit in Prozent für Orange. Grenzwerte absteigend anordnen.",
+  "durabilityindicator.midnightconfig.yellowThreshold.tooltip": "Mindesthaltbarkeit in Prozent für Gelb. Grenzwerte absteigend anordnen.",
+  "durabilityindicator.midnightconfig.redThreshold.tooltip": "Mindesthaltbarkeit in Prozent für Rot. Darunter wird Dunkelrot verwendet."
+}

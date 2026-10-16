@@ -3,6 +3,7 @@
   "id": "durabilityindicator",
   "version": "${version}",
   "name": "Durability Indicator",
+  "icon": "icon.png",
   "description": "A customizable durability overlay for Minecraft.",
   "authors": [
     "Extraherz"
@@ -19,10 +20,14 @@
       "de.extraherz.durabilityindicator.fabric.DurabilityIndicatorFabric"
     ]
   },
+  "mixins": [
+    "durabilityindicator.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.19.5",
     "minecraft": "~26.3",
     "java": ">=25",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "midnightlib": ">=1.10.0"
   }
 }

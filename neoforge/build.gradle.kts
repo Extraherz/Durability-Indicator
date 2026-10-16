@@ -13,6 +13,13 @@ java {
     withSourcesJar()
 }
 
+sourceSets {
+    named("main") {
+        java.srcDir(rootProject.file("config/src/main/java"))
+        resources.srcDir(rootProject.file("config/src/main/resources"))
+    }
+}
+
 neoForge {
     version = providers.gradleProperty("neoforge_version").get()
 
@@ -29,9 +36,23 @@ neoForge {
     }
 }
 
+
+repositories {
+    maven("https://maven.midnightdust.eu/releases")
+}
+
+
+
 dependencies {
     implementation(project(":common"))
+
+    implementation(
+        "eu.midnightdust:midnightlib:" +
+                "${property("midnightlib_version")}+" +
+                "${property("minecraft_version")}-neoforge"
+    )
 }
+
 
 tasks.processResources {
     val replaceProperties = mapOf(

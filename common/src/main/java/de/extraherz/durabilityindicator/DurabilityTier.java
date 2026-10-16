@@ -10,13 +10,20 @@ public enum DurabilityTier {
     DARK_RED("#AA0000");
 
     private final String defaultHexColor;
+    private final int defaultArgbColor;
 
     DurabilityTier(String defaultHexColor) {
         this.defaultHexColor = defaultHexColor;
+        this.defaultArgbColor = 0xFF000000
+                | Integer.parseInt(defaultHexColor.substring(1), 16);
     }
 
     public String getDefaultHexColor() {
         return defaultHexColor;
+    }
+
+    public int getDefaultArgbColor() {
+        return defaultArgbColor;
     }
 
     public static DurabilityTier fromPercentage(int percentage) {

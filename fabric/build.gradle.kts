@@ -12,6 +12,18 @@ java {
     withSourcesJar()
 }
 
+sourceSets {
+    named("main") {
+        java.srcDir(rootProject.file("config/src/main/java"))
+        resources.srcDir(rootProject.file("config/src/main/resources"))
+    }
+}
+
+repositories {
+    maven("https://maven.midnightdust.eu/releases")
+    maven("https://maven.terraformersmc.com/releases/")
+}
+
 dependencies {
     minecraft(
         "com.mojang:minecraft:${property("minecraft_version")}"
@@ -26,6 +38,14 @@ dependencies {
     )
 
     implementation(project(":common"))
+
+
+    implementation(
+        "eu.midnightdust:midnightlib:" +
+                "${property("midnightlib_version")}+" +
+                "${property("minecraft_version")}-fabric"
+    )
+
 }
 
 tasks.processResources {

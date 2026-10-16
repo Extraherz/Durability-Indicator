@@ -5,6 +5,7 @@ issueTrackerURL="https://github.com/Extraherz/Durability-Indicator/issues"
 modId="durabilityindicator"
 version="${mod_version}"
 displayName="Durability Indicator"
+logoFile="icon.png"
 displayURL="https://github.com/Extraherz/Durability-Indicator"
 authors="Extraherz"
 description='''A highly customizable, client-side durability indicator for Minecraft.'''
@@ -22,3 +23,13 @@ type="required"
 versionRange="[26.3]"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.durabilityindicator]]
+modId="midnightlib"
+type="required"
+versionRange="[1.10.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[mixins]]
+config="durabilityindicator.mixins.json"

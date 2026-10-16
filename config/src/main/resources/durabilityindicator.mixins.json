@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.extraherz.durabilityindicator.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "GuiGraphicsExtractorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

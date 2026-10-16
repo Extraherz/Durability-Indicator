@@ -3,7 +3,7 @@ package de.extraherz.durabilityindicator;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DurabilityCoreTest {
 
@@ -67,5 +67,93 @@ public class DurabilityCoreTest {
 
         assertEquals(DurabilityTier.DARK_RED, DurabilityTier.fromPercentage(4));
         assertEquals(DurabilityTier.DARK_RED, DurabilityTier.fromPercentage(0));
+    }
+
+    @Test
+    void checksCreativeModeVisibility() {
+        // Survival: always show durability
+        assertEquals(true, DurabilityVisibility.shouldDisplay(
+                1561, 0, false, false
+        ));
+
+        assertEquals(true, DurabilityVisibility.shouldDisplay(
+                1561, 10, false, false
+        ));
+
+        // Creative: hide undamaged items by default
+        assertEquals(false, DurabilityVisibility.shouldDisplay(
+                1561, 0, true, false
+        ));
+
+        // Creative: damaged items remain visible
+        assertEquals(true, DurabilityVisibility.shouldDisplay(
+                1561, 10, true, false
+        ));
+
+        // Creative: config override allows undamaged items
+        assertEquals(true, DurabilityVisibility.shouldDisplay(
+                1561, 0, true, true
+        ));
+
+        // Items without durability never show an overlay
+        assertEquals(false, DurabilityVisibility.shouldDisplay(
+                0, 0, false, true
+        ));
+    }
+
+    @Test
+    void calculatesDefaultOverlayPosition() {
+        assertEquals(
+                13.0f,
+                DurabilityOverlayLayout.getDefaultYOffset(true)
+        );
+
+        assertEquals(
+                15.0f,
+                DurabilityOverlayLayout.getDefaultYOffset(false)
+        );
+
+        assertEquals(
+                8.5f,
+                DurabilityOverlayLayout.DEFAULT_X_OFFSET
+        );
+    }
+
+    @Test
+    void createsOverlayData() {
+        DurabilityColorPalette palette = DurabilityColorPalette.DEFAULT;
+
+        DurabilityOverlayData damaged = DurabilityOverlayData.create(
+                1561, 12, false, true, false, true, palette
+        );
+
+        assertNotNull(damaged);
+        assertEquals("1,5k", damaged.text());
+        assertEquals(8.5f, damaged.xOffset());
+        assertEquals(13.0f, damaged.yOffset());
+        assertEquals(0xFF55FF55, damaged.color());
+
+        DurabilityOverlayData undamaged = DurabilityOverlayData.create(
+                1561, 0, false, false, false, true, palette
+        );
+
+        assertNotNull(undamaged);
+        assertEquals("1,6k", undamaged.text());
+        assertEquals(15.0f, undamaged.yOffset());
+
+        DurabilityOverlayData exact = DurabilityOverlayData.create(
+                1561, 0, false, false, false, false, palette
+        );
+
+        assertNotNull(exact);
+        assertEquals("1561", exact.text());
+
+        assertNull(DurabilityOverlayData.create(
+                1561, 0, true, false, false, true, palette
+        ));
+
+        assertNotNull(DurabilityOverlayData.create(
+                1561, 12, true, true, false, true, palette
+        ));
     }
 }
